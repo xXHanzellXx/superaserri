@@ -1,0 +1,124 @@
+/* Estilos generales del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #aeeeee, #ccf2f4); /* Degradado suave de fondo */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 10px;
+    background: rgba(92, 219, 149, 0.8); /* Color de fondo del header */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Estilo del logo */
+#logoI {
+    width: 80px;
+    height: auto;
+}
+
+/* Formulario de Login */
+#login-form {
+    background: white;
+    padding: 40px; /* Ajusta el padding */
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.5s ease;
+    max-width: 400px; /* Limitar el ancho máximo del formulario */
+    width: 90%; /* Asegura que el formulario sea responsive */
+    margin: 0 auto; /* Asegura que el formulario esté centrado */
+}
+
+/* Efecto al pasar el mouse sobre el formulario */
+#login-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Título del formulario */
+h1 {
+    text-align: center;
+    color: #5cdb95; /* Color de la paleta */
+    margin-bottom: 20px;
+}
+
+/* Estilo de los inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    padding-left: 1px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Efectos de transición */
+}
+
+input:focus {
+    border-color: #5cdb95; /* Color de borde al enfocar */
+    box-shadow: 0 0 5px rgba(92, 219, 149, 0.5); /* Sombra en el enfoque */
+}
+
+/* Botón de envío */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cdb95; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones para el botón */
+}
+
+button:hover {
+    background-color: #45a29e; /* Color al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(92, 219, 149, 0.8); /* Color de fondo del footer */
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para enlaces */
+footer a {
+    color: #ffe156; /* Color de enlace de la paleta */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffab40; /* Cambio de color al pasar el ratón */
+}

@@ -1,0 +1,242 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #aeeeee, #ccf2f4); /* Degradado suave de fondo */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #5cdb95; /* Color nuevo */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header h1:hover {
+    color: #ffe156; /* Cambio de color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de crecimiento */
+}
+
+/* Sección de Contacto */
+#contact-us {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5cdb95; /* Color nuevo */
+    margin-bottom: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+    color: #ffe156; /* Cambio de color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de crecimiento */
+}
+
+/* Contenido del Contacto */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Información de Contacto */
+.contact-info {
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info:hover {
+    transform: scale(1.02); /* Efecto de zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Elementos de la lista */
+.contact-info li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-info li:hover {
+    color: #ffe156; /* Cambia de color al pasar el ratón */
+}
+
+.contact-info li i {
+    margin-right: 10px;
+    color: #5cdb95; /* Color nuevo */
+}
+
+/* Enlaces */
+.contact-info a {
+    color: #5cdb95; /* Color nuevo */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #ffe156; /* Color al pasar el ratón */
+}
+
+/* Formulario de Contacto */
+.contact-form {
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form:hover {
+    transform: scale(1.02); /* Efecto de zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px; /* Mayor padding para comodidad */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5cdb95; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(92, 219, 149, 0.5); /* Sombra en el enfoque */
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #5cdb95; /* Color nuevo */
+    color: white;
+    padding: 12px 25px; /* Botón más grande */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #45a29e; /* Color al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Mapa */
+.map {
+    margin-top: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.map iframe {
+    border: 0;
+    width: 100%;
+    height: 400px;
+    border-radius: 8px; /* Bordes redondeados para el mapa */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #5cdb95; /* Color nuevo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+footer a {
+    color: #ffe156; /* Color nuevo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1b9aaa; /* Cambio de color al pasar el ratón */
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem; /* Tamaño de fuente más pequeño para móviles */
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 15px; /* Menor padding en pantallas pequeñas */
+    }
+}
